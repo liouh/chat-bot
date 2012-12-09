@@ -32,6 +32,9 @@ function chatBot() {
 		if(this.match('(cya|bye|see ya|ttyl|talk to you later)'))
 			return ["alright, see you around", "good teamwork!"];
 		
+		if(this.match('(dumb|stupid|is that all)'))
+			return ["hey i'm just a proof of concept", "you can make me smarter if you'd like"];
+		
 		if(this.input == 'noop')
 			return;
 		
