@@ -17,7 +17,7 @@ function chatBot() {
 	
 		this.input = input.toLowerCase();
 		
-		if(this.match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
+		if(this.match('(hey)+(y|$)') || this.match('(hello)+(o|$)') || this.match('(hola)+(a|$)') || this.match('(hi)+(i|$)') || this.match('(howdy)(\\s|!|\\.|$)'))
 			return "um... hi?";
 		
 		if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
